@@ -10,7 +10,7 @@ const SideBar: React.FC = () => {
         <Box
             w="26%"
             height="100vh"
-            bg="blue"
+            bg="green.800"
             display="flex"
             flexDirection="column"
             justifyContent="start"
@@ -27,14 +27,14 @@ const SideBar: React.FC = () => {
             </Box>
 
             {/* Tabs Area */}
-            <Box bg="white" flex="1" w="100%">
-                <Tabs variant="enclosed" colorScheme="blue" isLazy>
+            <Box bg="white" flex="1" w="100%" >
+                <Tabs variant="enclosed" colorScheme="green.600" isLazy>
                     <TabList>
-                        <Tab w="50%" display="flex" alignItems="center">
+                        <Tab w="50%" h="6vh" display="flex" alignItems="center">
                             <Icon as={FaMessage} w={6} h={6} />
                             <Text pl={2}>Chats List</Text>
                         </Tab>
-                        <Tab w="50%" display="flex" alignItems="center">
+                        <Tab w="50%" h="6vh" display="flex" alignItems="center">
                             <Icon as={FaUser} w={6} h={6} />
                             <Text pl={2}>Users List</Text>
                         </Tab>
@@ -113,6 +113,72 @@ const SideBar: React.FC = () => {
                                         <Box display="flex" flexDirection="column">
                                             <Heading size="sm" color="black">Alice Wonderland</Heading>
                                             <Text color="gray.600">Online</Text>
+                                        </Box>
+                                    </Box>
+                                </ListItem>
+                                <ListItem>
+                                    <Box
+                                        display="flex"
+                                        alignItems="center"
+                                        p={4}
+                                        bg="white"
+                                        boxShadow="sm"
+                                        borderRadius="md"
+                                    >
+                                        <Image
+                                            src={manImage}
+                                            alt="User Picture"
+                                            width={50}
+                                            height={50}
+                                            style={{ borderRadius: '50%', marginRight: '16px' }}
+                                        />
+                                        <Box display="flex" flexDirection="column">
+                                            <Heading size="sm" color="black">Bob Builder</Heading>
+                                            <Text color="gray.600">Offline</Text>
+                                        </Box>
+                                    </Box>
+                                </ListItem>
+                                <ListItem>
+                                    <Box
+                                        display="flex"
+                                        alignItems="center"
+                                        p={4}
+                                        bg="white"
+                                        boxShadow="sm"
+                                        borderRadius="md"
+                                    >
+                                        <Image
+                                            src={manImage}
+                                            alt="User Picture"
+                                            width={50}
+                                            height={50}
+                                            style={{ borderRadius: '50%', marginRight: '16px' }}
+                                        />
+                                        <Box display="flex" flexDirection="column">
+                                            <Heading size="sm" color="black">Bob Builder</Heading>
+                                            <Text color="gray.600">Offline</Text>
+                                        </Box>
+                                    </Box>
+                                </ListItem>
+                                <ListItem>
+                                    <Box
+                                        display="flex"
+                                        alignItems="center"
+                                        p={4}
+                                        bg="white"
+                                        boxShadow="sm"
+                                        borderRadius="md"
+                                    >
+                                        <Image
+                                            src={manImage}
+                                            alt="User Picture"
+                                            width={50}
+                                            height={50}
+                                            style={{ borderRadius: '50%', marginRight: '16px' }}
+                                        />
+                                        <Box display="flex" flexDirection="column">
+                                            <Heading size="sm" color="black">Bob Builder</Heading>
+                                            <Text color="gray.600">Offline</Text>
                                         </Box>
                                     </Box>
                                 </ListItem>

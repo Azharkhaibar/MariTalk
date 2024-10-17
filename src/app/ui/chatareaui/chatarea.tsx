@@ -1,0 +1,13 @@
+import { Box, Heading, Text, Icon, Image, Flex } from "@chakra-ui/react";
+import ChatAreaHeader from "./headerchatarea";
+import BodyChatArea from "./bodychatarea";
+const ChatArea: React.FC = () => {
+    return(
+        <Box w="50%" bg="blue" h="100%" display="flex" flexDirection="column">
+            <ChatAreaHeader />
+            <BodyChatArea />
+        </Box>
+    )
+}
+
+export default ChatArea;
