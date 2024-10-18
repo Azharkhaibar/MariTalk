@@ -1,5 +1,5 @@
 "use client";
-import { Box, Text, Heading, Flex, Icon } from "@chakra-ui/react";
+import { Box, Text, Heading, Flex, Icon, Avatar } from "@chakra-ui/react";
 import { FaArrowLeft } from "react-icons/fa6";
 import { MdCall, MdRadioButtonChecked, MdOutlineVideoCall } from "react-icons/md";
 import Image from 'next/image';
@@ -28,16 +28,12 @@ const ChatAreaHeader: React.FC = () => {
                     mr={4}
                     _hover={{ color: "gray.200", cursor: "pointer" }}
                 />
-                <Image
-                    src={manImage}
-                    alt="Profile Picture"
-                    width={60}
-                    height={60}
-                    style={{
-                        borderRadius: '50%',
-                        marginRight: '16px',
-                        border: '2px solid white',
-                    }}
+                <Avatar
+                    w="50px"
+                    h="50px"
+                    name='Azhar Khaibar'
+                    src='https://bit.ly/prosper-baba'
+                    mr={4} // Margin right for spacing between avatar and text
                 />
                 <Box>
                     <Heading size="md" color="white" fontWeight="bold">Nama Anda</Heading>

@@ -2,6 +2,7 @@
 import { Box, Text, Heading } from "@chakra-ui/react";
 import SideBar from "../ui/sidebar";
 import ChatArea from "../ui/chatareaui/chatarea";
+import Profile from "../ui/profile";
 const Homepage: React.FC = () => {
     return(
         <Box w="100%" h="100vh" display="flex"
@@ -9,6 +10,7 @@ const Homepage: React.FC = () => {
         >
             <SideBar />
             <ChatArea />
+            <Profile />
         </Box>
     )
 }

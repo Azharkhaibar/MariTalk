@@ -4,7 +4,7 @@ import BodyChatArea from "./bodychatarea";
 import FooterChatArea from "./footerchatarea";
 const ChatArea: React.FC = () => {
     return(
-        <Box w="50%" bg="blue" h="100%" display="flex" flexDirection="column">
+        <Box w="55%" bg="blue" h="100%" display="flex" flexDirection="column">
             <ChatAreaHeader />
             <BodyChatArea />
             <FooterChatArea />
