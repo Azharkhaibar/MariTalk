@@ -1,7 +1,7 @@
 "use client";
 import { Box, Text, Heading, Flex, Icon } from "@chakra-ui/react";
 import { FaArrowLeft } from "react-icons/fa6";
-import { MdCall, MdRadioButtonChecked } from "react-icons/md";
+import { MdCall, MdRadioButtonChecked, MdOutlineVideoCall } from "react-icons/md";
 import Image from 'next/image';
 import manImage from '../../public/img/man.png';
 
@@ -47,7 +47,7 @@ const ChatAreaHeader: React.FC = () => {
 
             {/* Right Section: Status Icon and Call Icon */}
             <Flex alignItems="center">
-                <Icon as={MdRadioButtonChecked} w={6} h={6} color="green.400" />
+                <Icon as={MdOutlineVideoCall} w={6} h={6} color="white" />
                 <Icon
                     as={MdCall}
                     w={6}

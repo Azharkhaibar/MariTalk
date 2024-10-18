@@ -1,5 +1,22 @@
 "use client";
-import { Box, Text, Heading, Tabs, TabList, TabPanels, Tab, TabPanel, Icon, List, ListItem } from "@chakra-ui/react";
+
+import {
+    Box,
+    Text,
+    Heading,
+    Tabs,
+    TabList,
+    TabPanels,
+    Tab,
+    TabPanel,
+    Icon,
+    List,
+    ListItem,
+    Avatar,
+    AvatarBadge,
+    AvatarGroup
+} from "@chakra-ui/react";
+
 import Image from 'next/image'; // Pastikan impor Image dari next/image
 import SideBarHeader from "./header";
 import { FaMessage, FaUser } from "react-icons/fa6";
@@ -27,7 +44,7 @@ const SideBar: React.FC = () => {
             </Box>
 
             {/* Tabs Area */}
-            <Box bg="white" flex="1" w="100%" >
+            <Box bg="white" flex="1" w="100%">
                 <Tabs variant="enclosed" colorScheme="green.600" isLazy>
                     <TabList>
                         <Tab w="50%" h="6vh" display="flex" alignItems="center">
@@ -53,19 +70,16 @@ const SideBar: React.FC = () => {
                                         boxShadow="sm"
                                         borderRadius="md"
                                     >
-                                        <Image
-                                            src={manImage}
-                                            alt="Profile Picture"
-                                            width={50}
-                                            height={50}
-                                            style={{ borderRadius: '50%', marginRight: '16px' }}
-                                        />
-                                        <Box display="flex" flexDirection="column">
+                                        <Avatar>
+                                            <AvatarBadge boxSize='1.25em' bg='green.500' />
+                                        </Avatar>
+                                        <Box display="flex" flexDirection="column" ml={4}>
                                             <Heading size="sm" color="black">John Doe</Heading>
                                             <Text color="gray.600">Last message snippet...</Text>
                                         </Box>
                                     </Box>
                                 </ListItem>
+
                                 <ListItem>
                                     <Box
                                         display="flex"
@@ -75,14 +89,10 @@ const SideBar: React.FC = () => {
                                         boxShadow="sm"
                                         borderRadius="md"
                                     >
-                                        <Image
-                                            src={manImage}
-                                            alt="Profile Picture"
-                                            width={50}
-                                            height={50}
-                                            style={{ borderRadius: '50%', marginRight: '16px' }}
-                                        />
-                                        <Box display="flex" flexDirection="column">
+                                        <Avatar>
+                                            <AvatarBadge boxSize='1.25em' bg='green.500' />
+                                        </Avatar>
+                                        <Box display="flex" flexDirection="column" ml={4}>
                                             <Heading size="sm" color="black">Jane Smith</Heading>
                                             <Text color="gray.600">Another message snippet...</Text>
                                         </Box>
@@ -103,19 +113,16 @@ const SideBar: React.FC = () => {
                                         boxShadow="sm"
                                         borderRadius="md"
                                     >
-                                        <Image
-                                            src={manImage}
-                                            alt="User Picture"
-                                            width={50}
-                                            height={50}
-                                            style={{ borderRadius: '50%', marginRight: '16px' }}
-                                        />
-                                        <Box display="flex" flexDirection="column">
+                                        <Avatar>
+                                            <AvatarBadge boxSize='1.25em' bg='green.500' />
+                                        </Avatar>
+                                        <Box display="flex" flexDirection="column" ml={4}>
                                             <Heading size="sm" color="black">Alice Wonderland</Heading>
                                             <Text color="gray.600">Online</Text>
                                         </Box>
                                     </Box>
                                 </ListItem>
+
                                 <ListItem>
                                     <Box
                                         display="flex"
@@ -125,19 +132,16 @@ const SideBar: React.FC = () => {
                                         boxShadow="sm"
                                         borderRadius="md"
                                     >
-                                        <Image
-                                            src={manImage}
-                                            alt="User Picture"
-                                            width={50}
-                                            height={50}
-                                            style={{ borderRadius: '50%', marginRight: '16px' }}
-                                        />
-                                        <Box display="flex" flexDirection="column">
+                                        <Avatar>
+                                            <AvatarBadge borderColor='papayawhip' bg='tomato' boxSize='1.25em' />
+                                        </Avatar>
+                                        <Box display="flex" flexDirection="column" ml={4}>
                                             <Heading size="sm" color="black">Bob Builder</Heading>
                                             <Text color="gray.600">Offline</Text>
                                         </Box>
                                     </Box>
                                 </ListItem>
+
                                 <ListItem>
                                     <Box
                                         display="flex"
@@ -147,81 +151,11 @@ const SideBar: React.FC = () => {
                                         boxShadow="sm"
                                         borderRadius="md"
                                     >
-                                        <Image
-                                            src={manImage}
-                                            alt="User Picture"
-                                            width={50}
-                                            height={50}
-                                            style={{ borderRadius: '50%', marginRight: '16px' }}
-                                        />
-                                        <Box display="flex" flexDirection="column">
-                                            <Heading size="sm" color="black">Bob Builder</Heading>
-                                            <Text color="gray.600">Offline</Text>
-                                        </Box>
-                                    </Box>
-                                </ListItem>
-                                <ListItem>
-                                    <Box
-                                        display="flex"
-                                        alignItems="center"
-                                        p={4}
-                                        bg="white"
-                                        boxShadow="sm"
-                                        borderRadius="md"
-                                    >
-                                        <Image
-                                            src={manImage}
-                                            alt="User Picture"
-                                            width={50}
-                                            height={50}
-                                            style={{ borderRadius: '50%', marginRight: '16px' }}
-                                        />
-                                        <Box display="flex" flexDirection="column">
-                                            <Heading size="sm" color="black">Bob Builder</Heading>
-                                            <Text color="gray.600">Offline</Text>
-                                        </Box>
-                                    </Box>
-                                </ListItem>
-                                <ListItem>
-                                    <Box
-                                        display="flex"
-                                        alignItems="center"
-                                        p={4}
-                                        bg="white"
-                                        boxShadow="sm"
-                                        borderRadius="md"
-                                    >
-                                        <Image
-                                            src={manImage}
-                                            alt="User Picture"
-                                            width={50}
-                                            height={50}
-                                            style={{ borderRadius: '50%', marginRight: '16px' }}
-                                        />
-                                        <Box display="flex" flexDirection="column">
-                                            <Heading size="sm" color="black">Bob Builder</Heading>
-                                            <Text color="gray.600">Offline</Text>
-                                        </Box>
-                                    </Box>
-                                </ListItem>
-                                <ListItem>
-                                    <Box
-                                        display="flex"
-                                        alignItems="center"
-                                        p={4}
-                                        bg="white"
-                                        boxShadow="sm"
-                                        borderRadius="md"
-                                    >
-                                        <Image
-                                            src={manImage}
-                                            alt="User Picture"
-                                            width={50}
-                                            height={50}
-                                            style={{ borderRadius: '50%', marginRight: '16px' }}
-                                        />
-                                        <Box display="flex" flexDirection="column">
-                                            <Heading size="sm" color="black">Bob Builder</Heading>
+                                        <Avatar>
+                                            <AvatarBadge borderColor='papayawhip' bg='tomato' boxSize='1.25em' />
+                                        </Avatar>
+                                        <Box display="flex" flexDirection="column" ml={4}>
+                                            <Heading size="sm" color="black">Charlie Chaplin</Heading>
                                             <Text color="gray.600">Offline</Text>
                                         </Box>
                                     </Box>
