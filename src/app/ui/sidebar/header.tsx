@@ -9,7 +9,6 @@ const SideBarHeader: React.FC = () => {
         <Box
             display="flex"
             alignItems="center"
-            p={4} // Memberikan padding untuk tampilan lebih baik
         >
             <Image
                 src={manImage}

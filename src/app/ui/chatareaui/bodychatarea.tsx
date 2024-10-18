@@ -1,5 +1,5 @@
-import { Box, Heading, Text, Avatar, AvatarBadge, List, ListItem } from "@chakra-ui/react";
-
+import { Box, Heading, Text, Avatar, AvatarBadge, List, ListItem, Icon } from "@chakra-ui/react";
+import { LuReplyAll } from "react-icons/lu";
 const BodyChatArea: React.FC = () => {
     return (
         <Box w="100%" h="90vh" bg="gray.200" overflowY="auto">
@@ -30,19 +30,46 @@ const BodyChatArea: React.FC = () => {
                             borderRadius="md"
                             w="full"
                         >
-                            <Heading size="sm" color="black">Bob Builder</Heading>
+                            <Heading size="sm" color="black">Nesya</Heading>
                             <Text color="gray.600" mt="1%">
                                 Ini Teks panjang sekali ya guys
                                 ini pertama kali gw ngebungkus projek realtime chat, Ini Teks panjang sekali ya guys
                                 ini pertama kali gw ngebungkus projek realtime chat, Ini Teks panjang sekali ya guys
                                 ini pertama kali gw ngebungkus projek realtime chat
                             </Text>
-                            <Text mt="1%" textAlign="end">12:50</Text>
+                            <Box display="flex" alignItems="center" justifyContent="space-between">
+                                <Text mt="1%">12:50</Text>
+                                <Icon as={LuReplyAll} w={5} h={5} />
+                            </Box>
                         </Box>
                     </Box>
                 </ListItem>
 
-                {/* Right Side Message */}
+                <ListItem>
+                    <Box display="flex" alignItems="center">
+                        <Avatar ml={4}>
+                            <AvatarBadge borderColor='papayawhip' bg='tomato' boxSize='1.25em' />
+                        </Avatar>
+                        <Box
+                            ml={3}
+                            p={4}
+                            mr={4}
+                            bg="white"
+                            boxShadow="sm"
+                            borderRadius="md"
+                            w="full"
+                        >
+                            <Heading size="sm" color="black">Samuel</Heading>
+                            <Text color="gray.600" mt="1%">
+                                the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                            </Text>
+                            <Box display="flex" alignItems="center" justifyContent="space-between">
+                                <Text mt="1%">12:50</Text>
+                                <Icon as={LuReplyAll} w={5} h={5} />
+                            </Box>
+                        </Box>
+                    </Box>
+                </ListItem>
                 <ListItem>
                     <Box display="flex" alignItems="center" justifyContent="flex-end">
                         <Box
@@ -54,11 +81,11 @@ const BodyChatArea: React.FC = () => {
                             borderRadius="md"
                             maxW="full"
                         >
-                            <Heading size="sm" textAlign="right" color="black">Alice Wonderland</Heading>
+                            <Heading size="sm" textAlign="right" color="black">Azhar Khaibar</Heading>
                             <Text color="gray.600" mt="1%" textAlign="right">
                                 Yang boneng ah elu
                             </Text>
-                            <Text mt="1%" textAlign="start">13:30</Text>
+                            <Text mt="1%" textAlign="end">13:30</Text>
                         </Box>
                         <Avatar mr={4}>
                             <AvatarBadge borderColor='papayawhip' bg='green.500' boxSize='1.25em' />

@@ -25,7 +25,7 @@ import manImage from '../../public/img/man.png';
 const SideBar: React.FC = () => {
     return (
         <Box
-            w="26%"
+            w="22%"
             height="100vh"
             bg="green.800"
             display="flex"
@@ -35,7 +35,7 @@ const SideBar: React.FC = () => {
             {/* Header Sidebar */}
             <Box
                 w="100%"
-                height="9vh"
+                height="8.1vh"
                 display="flex"
                 flexDirection="column"
                 justifyContent="center"
